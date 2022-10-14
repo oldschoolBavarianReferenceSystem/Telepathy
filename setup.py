@@ -20,7 +20,6 @@ setup(
         'alive_progress', 'requires == 2.4.1',
         'beautifulsoup4', 'requires == 4.9.3',
         'requests', 'requires == 2.28.1',
-        'googletrans', 'requires == 3.1.0a0',
         'pprintpp', 'requires == 0.4.0'
     ],
     entry_points='''

@@ -1,5 +1,4 @@
 from colorama import Fore, Back, Style
-from googletrans import Translator, constants
 from .const import __version__, user_agent
 import requests
 import textwrap
@@ -62,18 +61,9 @@ def process_message(mess, user_lang):
     else:
         mess_txt = "none"
 
-    if mess_txt != "none":
-        translator = Translator()
-        detection = translator.detect(mess_txt)
-        language_code = detection.lang
-        translation_confidence = detection.confidence
-        translation = translator.translate(mess_txt, dest=user_lang)
-        original_language = translation.src
-        translated_text = translation.text
-    else:
-        original_language = user_lang
-        translated_text = "n/a"
-        translation_confidence = "n/a"
+    original_language = user_lang
+    translated_text = "n/a"
+    translation_confidence = "n/a"
 
     return {
         "original_language": original_language,
