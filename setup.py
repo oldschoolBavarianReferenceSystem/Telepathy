@@ -19,8 +19,7 @@ setup(
         'colorama ~= 0.4.3',
         'alive_progress == 2.4.1',
         'beautifulsoup4 == 4.11.1',
-        'requests ~= 2.28.1',
-        'pprintpp',
+        'requests ~= 2.28.1'
     ],
     entry_points='''
         [console_scripts]
