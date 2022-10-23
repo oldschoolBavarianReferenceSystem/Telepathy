@@ -20,7 +20,7 @@ setup(
         'alive_progress == 2.4.1',
         'beautifulsoup4 == 4.11.1',
         'requests ~= 2.28.1',
-        'pprintpp == 0.4.0',
+        'pprintpp',
     ],
     entry_points='''
         [console_scripts]
