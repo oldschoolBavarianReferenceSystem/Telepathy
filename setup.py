@@ -13,13 +13,13 @@ setup(
     long_description_content_type='text/markdown',
     py_modules=['telepathy'],
     install_requires=[
-        'click ~= 7.1.2',
-        'telethon == 1.25.2',
+        'click >= 7.1.2',
+        'telethon >= 1.25.2',
         'pandas >= 1.4.2',
-        'colorama ~= 0.4.3',
-        'alive_progress == 2.4.1',
-        'beautifulsoup4 == 4.11.1',
-        'requests ~= 2.28.1'
+        'colorama >= 0.4.3',
+        'alive_progress >= 2.4.1',
+        'beautifulsoup4 >= 4.11.1',
+        'requests >= 2.28.1'
     ],
     entry_points='''
         [console_scripts]
